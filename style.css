@@ -17,6 +17,8 @@ justify-content: end;
       }
 }
 
+
+
 .content {
       display: none;
   }
@@ -249,6 +251,9 @@ width:100%;
 }
 .container-marg {
   margin-bottom: 18px;
+}
+.img-logo {
+  width: 150px;
 }
 }
 
