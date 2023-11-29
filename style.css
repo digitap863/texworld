@@ -1,0 +1,266 @@
+body {
+      /* background: url(assets/Mesh\ gradient.png) no-repeat center/cover; */
+      font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-collapse {
+
+justify-content: end;
+      }
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg .navbar-nav .nav-link {
+
+      margin-right: 10px;
+      }
+}
+
+.content {
+      display: none;
+  }
+
+  .spinner-grow {
+      /* background-image: linear-gradient(135deg, #E0C3FC 10%, #8EC5FC 100%); */
+      background-image: linear-gradient(135deg, #ff9a9e 10%, #fecfef 100%);
+  }
+
+nav.navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+  .breadcrumb {
+      background-color:transparent !important;
+  }
+  .breadcrumb-item a {
+      color:#303030;
+  }
+
+  .figure img {
+      border: 0.475rem solid #2A2A2AC9;
+      filter: drop-shadow(0 0 0.25rem #2A2A2AC9);
+      border-radius: 1rem;
+  }
+
+  .input-form {
+     display: flex;
+    /* flex-direction: column;  */
+    
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adjust spacing between rows as needed */
+    
+  }
+  
+  input[type="text"] {
+    /* width: calc(50% - 5px);  Two inputs share 50% width with 5px margin */
+    /* Adjust margins, padding, etc., based on your design */
+   margin-bottom: 1.2rem; 
+   border: 2px solid black;
+   transition: all 0.25s ease-in-out;
+   border-radius: 0;
+  }
+
+  .form-control:focus {
+  /* border-color: #86b7fe; */
+  background-image: linear-gradient(to right, white 85%, #a6b8c5);
+  outline: none;
+  box-shadow:  -26px -25px 49px -30px rgba(78,74,74,1);
+  -webkit-box-shadow: -26px -25px 49px -46px rgba(78,74,74,1);
+  transform: scale(1.0095);
+  }
+
+  .custom-select {
+    position: relative;
+    /* width: 200px; */
+  }
+
+  select option:hover {
+    background-color: lightblue; /* Change background color on hover */
+}
+
+  select option:checked {
+    background-color: lightblue; /* Change background color of the selected option */
+}
+
+  select option:active {
+    background-color: lightblue; /* Change background color when option is active (being clicked) */
+}
+
+select option {
+  border-radius: 0;
+  
+}
+
+  .custom-select select {
+    appearance: none; /* Hide default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: .375rem .75rem;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid black;
+  }
+  
+  /* .select-arrow {
+    position: absolute;
+    top: calc(50% - 4px); 
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: black transparent transparent transparent;
+    pointer-events: none;
+  } */
+  
+  /* .select-arrow::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white; 
+  } */
+
+  .select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    /* height: 90%; */
+    padding: 16px 10px;
+    background-color: black; /* Black background color */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Allows clicks to pass through */
+  }
+  
+  .select-arrow::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white; /* White arrow color */
+  }
+
+  #myTextarea {
+    width:100%;
+    border: 2px solid black;
+    border-radius: 0;
+  }
+  
+  .enquire {
+    width: 100%;
+    background: rgba(34.20, 27.96, 27.96, 0.91);
+    color: #fff;
+    margin-top: 1.2rem;
+    padding: 6px
+  }
+  .enquire:focus {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.0085);
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #F2F0F0;
+    color: #000;
+  }
+  
+  .list-type {
+    list-style-type:none ;
+  }
+
+/* .slide {
+  display: none;
+}
+
+.slide:first-child {
+  display: block;
+} */
+
+/* Define animation for the slideshow */
+/* @keyframes fade {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
+.slideshow {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  animation: fade 3s infinite;
+  transition: opacity 1s ease-in-out;
+} */
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+@media (max-width: 480px) {
+.slideshow-container {
+overflow: hidden;
+}
+}
+
+.slide-img {
+  display: none;
+}
+.slide-img img {
+  /* width: 100%;
+  height: auto; */
+}
+
+@media (max-width: 768px) {
+.slide-img img {
+width:100%;
+}
+.container-marg {
+  margin-bottom: 18px;
+}
+}
+
+.fade {
+
+  animation-name: fade;  
+  animation-duration:4s; 
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 1;
+  }100% {
+      opacity: .85;
+  }
+}
